@@ -1,11 +1,37 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Carousel from "../components/layouts/Carousel.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <header id="inicio" class="flex flex-col items-center px-10 gap-5 h-screen">
+    <h1 class="text-3xl font-bold">¡Bienvenidos!</h1>
+    <p class="text-center">
+      Somos un negocio creativo y especializado en diseño y fabricación de
+      muebles y pisos de resina epóxica y carpintería a medida. Combinamos la
+      resistencia de la resina con la calidez de la madera para transformar
+      espacios en ambientes únicos, funcionales y llenos de estilo.
+    </p>
+    <button class="btn btn-primary">Contáctanos</button>
+    <figure>
+      <img src="./resina_4.jpg" alt="ejemplo" class="rounded-2xl" />
+    </figure>
+  </header>
+
+  <main id="servicios" class="flex flex-col items-center">
+    <h2 class="text-2xl font-black">Servicios</h2>
+    <div class="px-10 py-20">
+      <Carousel />
+    </div>
+  </main>
+
+  <article class="flex flex-col w-full bg-secondary text-white p-10 gap-2">
+    <p class="text-2xl font-black">Creamos más que muebles, creamos experiencias visuales.</p>
+    <p>
+      ¡Dale vida a tus espacios con estilo! Fabricamos Mesas Encapsuladas, Pisos
+      de Porcelanato Liquido 3D y Carpintería creativa brindando acabados
+      modernos para hogares, negocios o donde quieras destacar. Contáctanos
+      cuanto antes
+    </p>
+  </article>
 </Layout>

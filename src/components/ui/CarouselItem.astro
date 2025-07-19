@@ -1,0 +1,15 @@
+---
+interface Props {
+  id: string;
+  title: string;
+}
+
+const { id, title } = Astro.props;
+---
+
+<article id={id} class="carousel-item w-full h-[516px]">
+  <div class="relative">
+    <slot />
+    <p class="absolute z-10 bottom-2 left-2 text-white text-2xl font-bold">{title}</p>
+  </div>
+</article>
