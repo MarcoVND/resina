@@ -39,6 +39,46 @@
     .header {
         background-image: url('./img_bg.jpg')
     }
+
+    .mesas {
+        background-image: url('./mesa_encapsulada.jpg');
+    }
+    
+    .paredes {
+        background-image: url('./paredes_encapsuladas.jpg');
+    }
+    
+    .puertas {
+        background-image: url('./puertas_encapsuladas.jpg');
+    }
+    
+    .pisos {
+        background-image: url('./pisos_encapsuladas.jpg');
+    }
+    
+    .carpinteria {
+        background-image: url('./carpinteria.jpg');
+    }
+    
+    .cubiertas {
+        background-image: url('./cubierta_cocina_3.jpg');
+    }
+    
+    .reparacion {
+        background-image: url('./reparacion_muebles.jpg');
+    }
+
+    .first-image {
+        background-image: url('./resina_6.jpg');
+    }
+
+    .second-image {
+        background-image: url('./resina_7.jpg');
+    }
+
+    .third-image {
+        background-image: url('./resina_9.jpg');
+    }
 }
 
 
