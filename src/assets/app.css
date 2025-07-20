@@ -35,6 +35,12 @@
   --noise: 0;
 }
 
+@media (width >= 48rem) {
+    .header {
+        background-image: url('./img_bg.jpg')
+    }
+}
+
 
 .parent {
     display: grid;
