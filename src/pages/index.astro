@@ -1,5 +1,7 @@
 ---
 import Carousel from "../components/layouts/Carousel.astro";
+import Footer from "../components/layouts/Footer.astro";
+import CarouselAboutUs from "../components/layouts/CarouselAboutUs.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -18,15 +20,17 @@ import Layout from "../layouts/Layout.astro";
     </figure>
   </header>
 
-  <main id="servicios" class="flex flex-col items-center">
+  <main id="servicios" class="flex flex-col items-center w-full">
     <h2 class="text-2xl font-black">Servicios</h2>
-    <div class="px-10 py-20">
+    <div class="px-10 py-10 w-full">
       <Carousel />
     </div>
   </main>
 
   <article class="flex flex-col w-full bg-secondary text-white p-10 gap-2">
-    <p class="text-2xl font-black">Creamos más que muebles, creamos experiencias visuales.</p>
+    <p class="text-2xl font-black">
+      Creamos más que muebles, creamos experiencias visuales.
+    </p>
     <p>
       ¡Dale vida a tus espacios con estilo! Fabricamos Mesas Encapsuladas, Pisos
       de Porcelanato Liquido 3D y Carpintería creativa brindando acabados
@@ -34,4 +38,21 @@ import Layout from "../layouts/Layout.astro";
       cuanto antes
     </p>
   </article>
+
+  <section id="about-us" class="flex flex-col w-full p-10 gap-5">
+    <h2 class="text-3xl font-bold">Sobre Nosotros</h2>
+    <p>
+      Somos un negocio creativo ofreciendo servicios y productos de calidad. Nos
+      encantaría trabajar en tu hogar, dando nuestro toque de diseño, arte y
+      resistencia.
+    </p>
+    <p>
+      Somos un negocio creativo ofreciendo servicios y productos de calidad. Nos
+      encantaría trabajar en tu hogar, dando nuestro toque de diseño, arte y
+      resistencia.
+    </p>
+    <CarouselAboutUs />
+  </section>
+
+  <Footer />
 </Layout>

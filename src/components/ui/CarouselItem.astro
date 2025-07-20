@@ -1,15 +1,21 @@
 ---
 interface Props {
   id: string;
-  title: string;
+  title?: string;
+  imgURL: string;
 }
 
-const { id, title } = Astro.props;
+const { id, title, imgURL } = Astro.props;
 ---
 
-<article id={id} class="carousel-item w-full h-[516px]">
+<article
+  id={id}
+  class="carousel-item w-full h-[300px] bg-cover rounded-2xl"
+  style={`background-image: url('./${imgURL}')`}
+>
   <div class="relative">
-    <slot />
-    <p class="absolute z-10 bottom-2 left-2 text-white text-2xl font-bold">{title}</p>
+    <p class="absolute z-10 bottom-2 left-2 text-white text-2xl font-bold">
+      {title}
+    </p>
   </div>
 </article>
